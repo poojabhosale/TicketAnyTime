@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89CFB425-2C6F-478E-9130-3D0698FE90E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicketAnyTime</RootNamespace>
+    <AssemblyName>TicketAnyTime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CentralStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentralStation.Designer.cs">
+      <DependentUpon>CentralStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalReport.Designer.cs">
+      <DependentUpon>FinalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HarbourStations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HarbourStations.Designer.cs">
+      <DependentUpon>HarbourStations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message.Designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OneTimePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OneTimePassword.Designer.cs">
+      <DependentUpon>OneTimePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentGateway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentGateway.Designer.cs">
+      <DependentUpon>PaymentGateway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThaneVashiStations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThaneVashiStations.Designer.cs">
+      <DependentUpon>ThaneVashiStations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WesternStations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WesternStations.Designer.cs">
+      <DependentUpon>WesternStations.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CentralStation.resx">
+      <DependentUpon>CentralStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalReport.resx">
+      <DependentUpon>FinalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HarbourStations.resx">
+      <DependentUpon>HarbourStations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OneTimePassword.resx">
+      <DependentUpon>OneTimePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentGateway.resx">
+      <DependentUpon>PaymentGateway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThaneVashiStations.resx">
+      <DependentUpon>ThaneVashiStations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WesternStations.resx">
+      <DependentUpon>WesternStations.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CrystalReport1.mht" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\images\maestro.gif" />
+    <Content Include="images\images\Master.jpg" />
+    <Content Include="images\images\mastercard.jpg" />
+    <Content Include="images\images\visa.jpg" />
+    <None Include="Resources\download %281%29.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\mastercard.jpg" />
+    <None Include="Resources\Master.jpg" />
+    <None Include="Resources\visa1.jpg" />
+    <None Include="Resources\visa.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
